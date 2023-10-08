@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/3c399f8611.js" crossorigin="anonymous"></script>
+    <!-- Font awesome cdnjs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Modals</title>
+</head>
+    <div class="container">
+        <h1 class="red-text text-lighten-2 center">Modals</h1>
+        <div class="divider"></div>
+        <br>
+
+        <div class="row">
+            <div class="col s12 m6 offset-m3">
+                <div class="card">
+                    <div class="card-image center-align">
+                        <img src="images/1d.jpg">
+                    </div>
+                    <div class="card-content center-align" style="padding: 13px;">
+                        <p>
+                            ONE DIRECTION
+                        </p>
+                    </div>
+                    <div class="card-action black center-align" style="padding: 8px;"> 
+                        <a href="#modal1" class="modal-trigger green-button">Share</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    <div style="height: 1000px"></div>
+
+    
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Embed Artist</h4>
+            
+            <div class="row center-align">
+                <div class="col s12" id="test1">
+                    <iframe style="border-radius: 12px;" src="https://open.spotify.com/embed/artist/4AK6F7OLvEQ5QYCBNiQWHq?utm_source=generator&theme=0" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            <p>
+                By embedding a Spotify player on your site, you are agreeing to
+                <a href="https://developer.spotify.com/developer-terms-of-use/" target="_blank">Spotify's Developer Terms</a>
+                and
+                <a href="https://developer.spotify.com/platform-terms-of-use/" target="_blank">Spotify Platform Rules</a>.
+            </p>
+        </div>
+        
+        <div class="modal-footer">
+            <label style="margin-right: 10px;">
+                <input type="checkbox" class="filled-in" id="showCodeCheckbox" />
+                <span>Show Code</span>
+            </label>
+            <a class="modal-close waves-effect waves-light btn-flat green rounded">Copy</a>
+        </div>
+    </div>
+
+
+
+    <!--JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+        });
+    </script>
+</body>
+</html>

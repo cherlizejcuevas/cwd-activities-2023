@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/3c399f8611.js" crossorigin="anonymous"></script>
+    <!-- Font awesome cdnjs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar & Sidenav</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar-fixed">
+            <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="fa-solid fa-bars"></i></a>
+            <ul id="nav-mobile" class="right hide-on-small-only">
+                <li>
+                    <a href="#!">Home</a>
+                </li>
+                <li>
+                    <a href="" class="dropdown-trigger" data-target="dropdown1"
+                </li>
+                <li>
+                    <a href="#!">Search</a>
+                </li>
+                <li>
+                    <a href="" class="dropdown-trigger" data-target="dropdown1">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    
+
+        <!--Dropdown Structure-->
+        <ul id="dropdown1" class="dropdown-content">
+            <li>
+                <a href="#!">Login</a>
+            </li>
+            <li>
+                <a href="#!">Signup</a>
+            </li>
+            <li class="divider"></li>                  
+            <li>
+                <a href="#!">Logout</a>
+            </li>
+        </ul>
+
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background" style="background-color: black;"></div>
+                    <a href="#user"><img class="circle" src="images/1x1.jpg"  style="width: 100px; height: 100px;"></a>
+                    <a href="#name"><span class="white-text name">Cherlize Janelle B. Cuevas</span></a>
+                    <a href="#email"><span class="white-text email">cherlizej.cuevas29@gmail.com</span></a>
+                </div>
+        </li>
+
+        <li>
+            <a class="subheader">Contacts</a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/cherlize.janelle/">
+                <i class="fa-brands fa-facebook" style="color: #005eff;"></i>Facebook</a>
+        </li>
+        <li>
+            <a href="https://github.com/cherlizejcuevas">
+                <i class="fa-brands fa-square-github" style="color: #050505;"></i>Github</a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/cherlize-janelle-cuevas-33b708292/">
+                <i class="fa-brands fa-linkedin" style="color: #0767bb;"></i>Linkedin</a>
+        </li>
+
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <a class="subheader">References</a>
+        </li>
+        <li>
+            <a class="waves-effect" href="https://materializecss.com/">Materialize CSS</a>
+        </li>
+        <li>
+            <a class="waves-effect" href="https://fontawesome.com/search?o=r&m=free">Font Awesome</a>
+        </li>
+      </ul>
+      
+
+    <h1 class="center red-text text-lighten-2">Navbar</h1>
+    <div class="divider"></div>
+    <br>
+    <div class="container">
+        <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+
+        <h3 class="red-text text-lighten-2">Right Aligned Links</h3>
+        <p>To right align your navbar links, just add a 
+        <code class="language-markup">right</code>
+        class to your 
+        <code class="language-markup">&lt;ul&gt;</code>
+        that contains them.
+
+        <nav class="blue darken-3">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://fontawesome.com/" class="brand-logo" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-small-only">
+                        <li>
+                            <a href="https://www.linkedin.com/feed/" target="_blank">Home</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/mynetwork/" target="_blank">My Network</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/jobs/" target="_blank">Jobs</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/messaging/thread/new/" target="_blank">Messaging</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/notifications/?filter=all" target="_blank">Notifications</a>
+                        </li>
+                    </ul>
+                  </div>
+            </div>
+          </nav>
+          <br>
+          <h3 class="red-text text-lighten-2 ">Left Aligned Links</h3>
+          <p>To right align your navbar links, just add a 
+            <code class="language-markup">left</code>
+            class to your 
+            <code class="language-markup">&lt;ul&gt;</code>
+            that contains them.
+          <nav class="black">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="" class="brand-logo right">
+                        <i class="fa-brands fa-youtube red-text text-darken-1 right"></i>
+                    </a>
+                    <ul id="nav-mobile" class="left hide-on-small-only">
+                        <li>
+                            <a href="https://www.youtube.com/feed/trending?bp=6gQJRkVleHBsb3Jl" target="_blank">Trending</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ" target="_blank">Music</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/feed/storefront?bp=ogUCKAI%3D" target="_blank">Movies</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/gaming" target="_blank">Gaming</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCYfdidRxbB8Qhf0Nx7ioOYw" target="_blank">News</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw" target="_blank">Sports</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCrpQ4p1Ql_hG8rKXIKM1MOQ" target="_blank">Fashion & Beauty</a>
+                        </li>                        
+                    </ul>
+                  </div>
+            </div>
+          </nav>
+
+          <br>
+          <h3 class="red-text text-lighten-2">Centering the logo</h3>
+          <p>
+            The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your
+            <br> 
+            <code class="language-markup">&lt;a class="brand-logo"&gt;</code>. 
+            You will have to make sure yourself that links do not overlap if you use this.
+          </p>
+          <nav class="deep-orange">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="" class="brand-logo center">
+                        <i class="fa-brands fa-unsplash"></i>
+                </a>
+                    <ul id="nav-mobile" class="left hide-on-small-only">
+                        <li>
+                            <a href="https://unsplash.com/explore" target="_blank">Explore</a>
+                        </li>
+                        <li>
+                            <a href="https://unsplash.com/advertise" target="_blank">Advertise</a>
+                        </li>
+                        <li>
+                            <a href="https://unsplash.com/plus" target="_blank">Unsplash+</a>
+                        </li>
+                    </ul>
+                  </div>
+            </div>
+          </nav>
+
+          <br>
+          <h3 class="red-text text-lighten-2">Active Items</h3>
+          <p>
+            Add active class to your li tags to denote the current page.
+          </p>
+          <nav class="light-blue">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://fontawesome.com/" class="brand-logo" target="_blank">
+                        <i class="fa-brands fa-skype"></i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-small-only">
+                        <li>
+                            <a href="https://www.skype.com/en/get-skype/" target="_blank">Downloads</a>
+                        </li>
+                        <li>
+                            <a href="https://www.skype.com/en/international-calls/" target="_blank">Skype to Phone</a>
+                        </li>
+                        <li>
+                            <a href="https://secure.skype.com/en/skype-number/" target="_blank">Skype Number</a>
+                        </li>
+                        <li>
+                            <a href="https://www.skype.com/en/features/" target="_blank">Features</a>
+                        </li>
+                        <li>
+                            <a href="https://www.skype.com/en/free-conference-call/?cm_mmc=accessurl" target="_blank">Host a meeting</a>
+                        </li>
+                    </ul>
+                  </div>
+            </div>
+          </nav>
+
+          <h3 class="red-text text-lighten-2">Extended Navbar with Tabs
+          </h3>
+
+          <p>
+            To add extended components to the navbar, add the class 
+            <code class="language-markup"> nav-extended</code>. 
+            to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.
+          </p>
+
+          <!-- Navbar extended-->
+          <nav class="green darken-1 nav-extended">
+            <div class="container">
+                <div class="nav-wrapper">
+                        <a href="https://fontawesome.com/" class="brand-logo" target="_blank">
+                            <i class="fa-brands fa-spotify"></i>
+                        </a>
+                        <a href="" class="sidenav-trigger" data-target="mobile-demo">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                        <ul id="nav-mobile" class="right hide-on-small-only">
+                            <li>
+                                <a href="https://accounts.spotify.com/en/login?continue=https%3A%2F%2Fopen.spotify.com%2Fgenre%2Fopm-page" target="_blank">Log in</a>
+                            </li>
+                            <li>
+                                <a href="https://www.spotify.com/ph-en/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2Fgenre%2Fopm-page" target="_blank">Sign up</a>
+                            </li>
+                        </ul>
+                        
+                        
+                  </div>
+                  <div class="nav-content">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab">
+                            <a href="#test1">K-Pop</a>
+                        </li>
+                        <li class="tab">
+                            <a href="#test2">Chill</a>
+                        </li>
+                        <li class="tab">
+                            <a href="#test3">OPM</a>
+                        </li>
+                        <li class="tab">
+                            <a href="#test4">R&B</a>
+                        </li>
+                        <li class="tab">
+                            <a href="#test5">Romance</a>
+                        </li>
+                        <li class="tab">
+                            <a href="#test6">Classical</a>
+                        </li>
+                        <li class="tab">
+                            <a href="#test7">Metal</a>
+                        </li>                   
+                    </ul>
+                  </div>
+            </div>
+          </nav>
+
+          <!-- Sidenav Structure-->
+          <ul class="sidenav" id="mobile-demo">
+                <li class="active">
+                    <a href="https://open.spotify.com/genre/podcasts-web" target="_blank">Podcasts</a>
+                </li>
+                <li class="active">
+                    <a href="https://open.spotify.com/" target="_blank">Made For You</a>
+                </li>
+                <li class="active">
+                    <a href="https://open.spotify.com/genre/browse-charts-tab" target="_blank">Charts</a>
+                </li>
+                <li class="active">
+                    <a href="https://open.spotify.com/genre/new-releases-page" target="_blank">New Releases</a>
+                </li>
+                <li class="active">
+                    <a href="https://open.spotify.com/genre/discover-page" target="_blank">Discover</a>
+                </li>
+            </ul>
+          </ul>
+
+          <!-- Tabs structure -->
+            <div class="row center-align">
+                <div class="col s12" id="test1">
+                    <div class="card">
+                        <div class="card-image">
+                            <iframe style="border-radius: 12px;" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWVGwK1DVdGDJ?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12" id="test2">
+                    <div class="card">
+                        <div class="card-image">
+                            <iframe style="border-radius: 12px;" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWU96w4Gh7vJe?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12" id="test3">
+                    <div class="card">
+                        <div class="card-image">
+                            <iframe style="border-radius: 12px;" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0iFfuXuP4Pm?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col s12" id="test4">
+                    <div class="card">
+                        <div class="card-image">
+                            <iframe style="border-radius: 12px;" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXbttAJcbphz?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col s12" id="test5">
+                    <div class="card">
+                        <div class="card-image">
+                            <iframe style="border-radius: 12px;" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXqpDKK4ed9O?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col s12" id="test6">
+                    <div class="card">
+                        <div class="card-image">
+                            <iframe style="border-radius: 12px;" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWEJlAGA9gs0?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col s12" id="test7">
+                    <div class="card">
+                        <div class="card-image">
+                            <iframe style="border-radius: 12px;" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX9qNs32fujYe?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    
+    <div style="height: 1000px"></div>
+
+
+    <!--JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            //Tabs Initialize
+            $('.tabs').tabs();
+            
+            //Sidenav Initialize
+            $('.sidenav').sidenav({
+                edge: 'right',
+                inDuration: 1000,
+                outDuration: 1000
+            });
+
+            //Dropdown Init
+            $('.dropdown-trigger').dropdown({
+        });
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var options = {}; // Define your options here
+            var instances = M.Sidenav.init(elems, options);
+        });
+    </script>
+
+</body>
+</html>
